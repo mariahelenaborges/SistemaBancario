@@ -26,8 +26,16 @@ export default class Cliente {
         return this.nome;
     }
 
+    setNome(nome: string): void {
+        this.nome = nome;
+    }
+
     getCpf(): string {
         return this.cpf;
+    }
+
+    setCpf(cpf: string): void {
+        this.cpf = cpf;
     }
 
     adicionarConta(conta: Conta): void {
@@ -36,6 +44,10 @@ export default class Cliente {
 
     getContas(): Conta[] {
         return this.contas;
+    }
+
+    setContas(contas: Conta[]): void {
+        this.contas = contas;
     }
 
     notificar(mensagem: string): void {
