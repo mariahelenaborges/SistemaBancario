@@ -36,8 +36,17 @@ export default class Conta {
         return this.saldo;
     }
 
+    setSaldo(saldo: number): void {
+        this.saldo = saldo;
+    }
+
     getCliente(): Cliente {
         return this.cliente;
+    }
+
+    setCliente(cliente: Cliente): void {
+        this.cliente = cliente;
+        this.cliente.adicionarConta(this);
     }
 
     bloquear(): void {
