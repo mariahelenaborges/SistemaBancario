@@ -18,4 +18,10 @@ export default class SaldoInsuficienteException extends Error {
 
     }
 
+    setQuantoFalta(quantoFalta: number): void {
+
+        this.quantoFalta = quantoFalta;
+
+    }
+
 }
